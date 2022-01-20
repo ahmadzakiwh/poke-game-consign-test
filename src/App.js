@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Rout from "./Routes/Route"
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> 
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <Rout/>
       </header>
+      
     </div>
   );
 }
