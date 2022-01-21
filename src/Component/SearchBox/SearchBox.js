@@ -6,7 +6,7 @@ function SearchBox(props) {
   
   return (
       <div>
-          <input className={classes.search} value={props.value} onChange={(e) => props.setSearchValue(e.target.value)} placeholder="Search"/>
+          <input className={classes.search} type="text" value={props.value} onChange={props.onChange} placeholder="Search"/>
       </div>
   )
 }

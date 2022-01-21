@@ -4,7 +4,7 @@ import "./bg.css"
 import { Modal } from '@material-ui/core';
 import Details from "../DetailsPoke/Details"
 
-function PokeCard(props, { name, image, type, hp, attack, defense, specialAttack, specialDefense, speed }) {
+function PokeCard(props, {name, image, type, hp, attack, defense, specialAttack, specialDefense, speed}) {
   const classes = useStyles();
   const bg = props.type + " pokemoncard"
   const [open, setOpen] = useState(false)
@@ -21,7 +21,7 @@ function PokeCard(props, { name, image, type, hp, attack, defense, specialAttack
         </div>
         <div className="overlay">
           <button onClick={handleOpen} className={classes.details}>Details</button>
-          <FavouriteComponent onClick={() => props.handleFavouritesClick()}/>
+          <FavouriteComponent onClick={props.handleFavouritesClick}/>
         </div>
         <Modal
           open={open}

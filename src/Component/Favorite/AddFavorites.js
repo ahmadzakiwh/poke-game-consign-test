@@ -1,9 +1,9 @@
 import React from 'react';
 import useStyles from "./style"
 
-export default function AddFavorites() {
+export default function AddFavorites(props) {
     const classes = useStyles();
   return (
-    <button className={classes.favorite}>Add Favourite</button>
+    <button className={classes.favorite} onClick={props.onClick}>Add Favourite</button>
   )
 }
