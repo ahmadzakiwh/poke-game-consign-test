@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
  
-import ListPoke  from "../Component/ListPoke/ListPoke";
+import ListPoke  from "../Pages/ListPoke/ListPoke";
 
 function Routess() {
     return (
